@@ -10,6 +10,12 @@ class Login extends StatefulWidget {
 class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      child: Column(
+        children: [
+          Image.asset('assets/images/logo.jpg'),
+        ],
+      ),
+    );
   }
 }
