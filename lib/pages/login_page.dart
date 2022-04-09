@@ -29,19 +29,25 @@ class _body extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset('assets/images/logo.png'),
-            SizedBox(height: 30),
+            SizedBox(height: 45),
             Container(
               child: Text("Location Changer",
-                  style: GoogleFonts.lato(fontSize: 25, color: Colors.black)),
+                  style: GoogleFonts.lato(fontSize: 22, color: Colors.black)),
             ),
-            SizedBox(height: 15),
+            SizedBox(height: 10),
             Text("Plugin app for Tinder",
-                style: GoogleFonts.lato(fontSize: 25, color: Colors.black)),
-            SizedBox(height: 15),
+                style: GoogleFonts.lato(fontSize: 16, color: Colors.black)),
+            SizedBox(height: 30),
             ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.red[500],
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20), // <-- Radius
+                  ),
+                ),
                 onPressed: () {},
                 child: Text("Login with Facebook",
-                    style: GoogleFonts.lato(fontSize: 15, color: Colors.black)))
+                    style: GoogleFonts.lato(fontSize: 15, color: Colors.white)))
           ],
         ),
       ),
